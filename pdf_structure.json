@@ -1,0 +1,279 @@
+[
+  {
+    "page": 1,
+    "rect": [
+      0.0,
+      0.0,
+      768.0,
+      960.0
+    ],
+    "text": "Click.  Source.  Build.\nIndia's Digital platform for All Building Materials\nwww.builditindia.com\n",
+    "blocks": [
+      [
+        159.4833984375,
+        161.99996948242188,
+        608.448486328125,
+        206.99996948242188,
+        "Click.  Source.  Build.\n",
+        0,
+        0
+      ],
+      [
+        166.140625,
+        224.0,
+        602.9204711914062,
+        244.0,
+        "India's Digital platform for All Building Materials\n",
+        1,
+        0
+      ],
+      [
+        280.21173095703125,
+        903.0,
+        488.7896728515625,
+        923.0,
+        "www.builditindia.com\n",
+        2,
+        0
+      ]
+    ],
+    "image_count": 1
+  },
+  {
+    "page": 2,
+    "rect": [
+      0.0,
+      0.0,
+      768.0,
+      960.0
+    ],
+    "text": "ASSOCIATED BRANDS\nTMT Bars\nAAC Blocks\nCement\nAAC Wall Panel\nAdhesive & Waterproofing \nPlumbing\n",
+    "blocks": [
+      [
+        30.0,
+        33.0,
+        267.4603271484375,
+        53.0,
+        "ASSOCIATED BRANDS\n",
+        0,
+        0
+      ],
+      [
+        55.0,
+        102.0,
+        165.29624938964844,
+        122.0,
+        "TMT Bars\n",
+        1,
+        0
+      ],
+      [
+        55.0,
+        311.0,
+        196.72984313964844,
+        331.0,
+        "AAC Blocks\n",
+        2,
+        0
+      ],
+      [
+        55.0,
+        440.0,
+        145.68780517578125,
+        460.0,
+        "Cement\n",
+        3,
+        0
+      ],
+      [
+        55.0,
+        569.0,
+        246.6846923828125,
+        589.0,
+        "AAC Wall Panel\n",
+        4,
+        0
+      ],
+      [
+        55.0,
+        698.0,
+        389.94769287109375,
+        718.0,
+        "Adhesive & Waterproofing \n",
+        5,
+        0
+      ],
+      [
+        55.0,
+        827.0,
+        168.61936950683594,
+        847.0,
+        "Plumbing\n",
+        6,
+        0
+      ]
+    ],
+    "image_count": 27
+  },
+  {
+    "page": 3,
+    "rect": [
+      0.0,
+      0.0,
+      768.0,
+      960.0
+    ],
+    "text": "ASSOCIATED BRANDS\nBath Fittings & Sanitary ware\nTiles\nFlush Tank\nKitchen Sink\nRadiant Cooling\nWellness Products\nPaints\nWall Putti\ndrainage Solution\n",
+    "blocks": [
+      [
+        30.0,
+        33.0,
+        267.4603271484375,
+        53.0,
+        "ASSOCIATED BRANDS\n",
+        0,
+        0
+      ],
+      [
+        55.0,
+        102.0,
+        428.80224609375,
+        122.0,
+        "Bath Fittings & Sanitary ware\n",
+        1,
+        0
+      ],
+      [
+        55.0,
+        241.0,
+        114.24937438964844,
+        261.0,
+        "Tiles\n",
+        2,
+        0
+      ],
+      [
+        55.0,
+        380.0,
+        190.98374938964844,
+        400.0,
+        "Flush Tank\n",
+        3,
+        0
+      ],
+      [
+        55.0,
+        519.0,
+        612.451416015625,
+        539.0,
+        "Kitchen Sink\nRadiant Cooling\n",
+        4,
+        0
+      ],
+      [
+        55.0,
+        658.0,
+        488.3314208984375,
+        678.0,
+        "Wellness Products\nPaints\n",
+        5,
+        0
+      ],
+      [
+        55.0,
+        797.0,
+        639.3317260742188,
+        817.0,
+        "Wall Putti\ndrainage Solution\n",
+        6,
+        0
+      ]
+    ],
+    "image_count": 20
+  },
+  {
+    "page": 4,
+    "rect": [
+      0.0,
+      0.0,
+      768.0,
+      960.0
+    ],
+    "text": "Click to Source.\nBuild to Scale.\nTrusted By\nHECTACORN TRADETECH PVT LTD\nRelationship Manager:\nAjjay D. Chouhan\nCOMPETITIVE PRICING\nFASTEST DELIVERY\nSUPERIOR SERVICE\n",
+    "blocks": [
+      [
+        214.16796875,
+        158.99996948242188,
+        554.8179931640625,
+        203.99996948242188,
+        "Click to Source.\n",
+        0,
+        0
+      ],
+      [
+        230.31788635253906,
+        208.9999237060547,
+        538.657958984375,
+        253.9999237060547,
+        "Build to Scale.\n",
+        1,
+        0
+      ],
+      [
+        319.1351623535156,
+        456.0,
+        449.875,
+        480.0,
+        "Trusted By\n",
+        2,
+        0
+      ],
+      [
+        34.0,
+        852.0,
+        289.3749694824219,
+        886.0,
+        "HECTACORN TRADETECH PVT LTD\nRelationship Manager:\n",
+        3,
+        0
+      ],
+      [
+        34.0,
+        894.0,
+        131.11000061035156,
+        907.0,
+        "Ajjay D. Chouhan\n",
+        4,
+        0
+      ],
+      [
+        578.0,
+        771.0,
+        710.719970703125,
+        786.0,
+        "COMPETITIVE PRICING\n",
+        5,
+        0
+      ],
+      [
+        578.0,
+        831.0,
+        686.614990234375,
+        846.0,
+        "FASTEST DELIVERY\n",
+        6,
+        0
+      ],
+      [
+        578.0,
+        891.0,
+        689.8400268554688,
+        906.0,
+        "SUPERIOR SERVICE\n",
+        7,
+        0
+      ]
+    ],
+    "image_count": 17
+  }
+]
