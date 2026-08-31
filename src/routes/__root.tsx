@@ -81,14 +81,35 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "India's Digital platform for All Building Materials. Explore 15 product categories, 48 premier associate brands, and get direct manufacturer pricing.",
       },
       { name: "author", content: "BuilditIndia - HECTACORN TRADETECH PVT LTD" },
+
+      // Open Graph Full Banner Image Meta Tags
+      { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "BuilditIndia" },
       { property: "og:title", content: "BuilditIndia | Everything Construction. One Platform." },
       {
         property: "og:description",
         content:
+          "India's Digital platform for All Building Materials. Explore 15 categories and 48 premier associate brands with direct manufacturer pricing.",
+      },
+      { property: "og:url", content: "https://builditindia-brand-hub-main.vercel.app" },
+      { property: "og:image", content: "https://builditindia-brand-hub-main.vercel.app/og-image.png" },
+      { property: "og:image:secure_url", content: "https://builditindia-brand-hub-main.vercel.app/og-image.png" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:type", content: "image/png" },
+      { property: "og:image:alt", content: "BuilditIndia - Everything Construction. One Platform." },
+
+      // Twitter / Social Cards (Full Large Image Preview)
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@BuilditIndia" },
+      { name: "twitter:title", content: "BuilditIndia | Everything Construction. One Platform." },
+      {
+        name: "twitter:description",
+        content:
           "India's Digital platform for All Building Materials. Sourced directly from 48+ associate brands.",
       },
-      { property: "og:type", content: "website" },
-      { property: "og:image", content: "/builditindia-logo.png" },
+      { name: "twitter:image", content: "https://builditindia-brand-hub-main.vercel.app/og-image.png" },
+      { name: "twitter:image:alt", content: "BuilditIndia - Everything Construction. One Platform." },
     ],
     links: [
       {
@@ -100,6 +121,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       { rel: "icon", href: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { rel: "apple-touch-icon", href: "/apple-touch-icon.png", sizes: "180x180" },
+      { rel: "image_src", href: "https://builditindia-brand-hub-main.vercel.app/og-image.png" },
     ],
   }),
   shellComponent: RootShell,
