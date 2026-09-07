@@ -5,14 +5,14 @@ export type LeadInput = {
   mobile: string;
   area: string;
   projectName: string;
-  projectType?: string;
+  projectType?: string | undefined;
   brochureId: string;
-  pageUrl?: string;
-  referrer?: string;
-  utmSource?: string;
-  utmMedium?: string;
-  utmCampaign?: string;
-  utmContent?: string;
+  pageUrl?: string | undefined;
+  referrer?: string | undefined;
+  utmSource?: string | undefined;
+  utmMedium?: string | undefined;
+  utmCampaign?: string | undefined;
+  utmContent?: string | undefined;
 };
 
 const RATE_LIMIT_WINDOW_MINUTES = 5;

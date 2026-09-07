@@ -7,6 +7,7 @@ export interface Brand {
   logo: string;
   description: string;
   cataloguePdfUrl?: string; // Slot for individual brand PDF
+  additionalPdfs?: { title: string; url: string }[];
   specifications?: string[];
   popularProducts?: string[];
 }
@@ -384,6 +385,7 @@ export const BRANDS: Brand[] = [
     categoryId: "aac-wall-panel",
     categoryName: "AAC Wall Panel",
     logo: "/logos/zmartbuild-wall-panel.png",
+    cataloguePdfUrl: "/pdfs/Zmart_Brochur_V11_8.75x12 Print Final_RZ.pdf",
     description: "Precast steel-mesh reinforced lightweight AAC wall panels for ultra-fast wall erection without wet plastering.",
     specifications: ["Steel Mesh Reinforced", "4x Faster Than Brickwork", "No Wet Plaster Required", "Smooth Paint-Ready Surface"],
     popularProducts: ["Zmartbuild Interior Wall Panels", "Zmartbuild Boundary Wall Systems"],
@@ -465,6 +467,11 @@ export const BRANDS: Brand[] = [
     categoryId: "plumbing",
     categoryName: "Plumbing",
     logo: "/logos/huliot-india.png",
+    cataloguePdfUrl: "/pdfs/Huliot_Ultra Silent Brochure 2023.pdf",
+    additionalPdfs: [
+      { title: "Huliot HT PRO Drainage Brochure", url: "/pdfs/Huliot HT PRO Brochure 2023.pdf" },
+      { title: "Heliroma PEX/PERT Multilayer Catalog", url: "/pdfs/HULIOT HELIROMA PEX PERT AND PERT-AL-PERT.pdf" },
+    ],
     description: "Advanced triple-layer acoustic soundproof drainage pipes engineered with mineral-reinforced polypropylene.",
     specifications: ["Silent Drainage (< 10dB)", "Push-Fit Socket Connection", "Hot Water & Chemical Resistant"],
     popularProducts: ["UltraSilent Acoustic Pipes", "Huliot ClearFlow"],
@@ -544,6 +551,7 @@ export const BRANDS: Brand[] = [
     categoryId: "bath-fittings",
     categoryName: "Bath Fittings & Sanitaryware",
     logo: "/logos/hindware-italian.png",
+    cataloguePdfUrl: "/pdfs/Cat Bath Complete Searchable-compressed (1).pdf",
     description: "Modern Italian aesthetics combined with powerful dual-tornado flush sanitaryware and designer bath fittings.",
     specifications: ["Nano-Glaze Antibacterial Finish", "Tornado Dual Flush", "Ultra-Sleek Profiles"],
     popularProducts: ["Hindware Element Water Closet", "Hindware Alita Brassware", "Hindware Touchless Taps"],
@@ -566,6 +574,7 @@ export const BRANDS: Brand[] = [
     categoryId: "bath-fittings",
     categoryName: "Bath Fittings & Sanitaryware",
     logo: "/logos/jaquar.png",
+    cataloguePdfUrl: "/pdfs/Jaquar customer guide 19.2.pdf",
     description: "India's most trusted bathroom brand featuring complete faucets, shower panels, sanitary ceramics, and water heaters.",
     specifications: ["10-Year Warranty", "PVD Colour Finishes", "Advanced Ceramic Discs"],
     popularProducts: ["Jaquar Artize Luxury Series", "Jaquar Alive Faucets", "Jaquar Kubix Prime"],
@@ -625,6 +634,10 @@ export const BRANDS: Brand[] = [
     categoryId: "flush-tank",
     categoryName: "Flush Tank",
     logo: "/logos/geberit-flushtank.png",
+    cataloguePdfUrl: "/pdfs/Alpha_Concealed_Cistern_Leaftlet_-_2026.pdf",
+    additionalPdfs: [
+      { title: "Geberit Alpha MRP Updated Price List", url: "/pdfs/Alpha_MRP_Brochure_June_Updated_Price.pdf" },
+    ],
     description: "Swiss concealed cisterns tested for 50-year service life, pneumatic actuation, and ultra-quiet filling valves.",
     specifications: ["Blow-Molded Seamless Tank", "Tool-Free Maintenance", "Sound Insulated Fill Valve"],
     popularProducts: ["Geberit Sigma Concealed Cistern 12cm", "Geberit Omega 8cm Slim", "Geberit Sigma Flush Plates"],
@@ -636,6 +649,10 @@ export const BRANDS: Brand[] = [
     categoryId: "flush-tank",
     categoryName: "Flush Tank",
     logo: "/logos/tece.png",
+    cataloguePdfUrl: "/pdfs/TECE All in One 2024 - Pricelist Updated JAN '25.pdf",
+    additionalPdfs: [
+      { title: "TECEprofil Pre-Wall Installation Manual", url: "/pdfs/TECEprofil. Pre Wall Installation.pdf" },
+    ],
     description: "German minimalist cistern modules, magnetic actuation plates, and ultra-slim concealed water tanks.",
     specifications: ["German Engineering", "Dual Flush Efficiency (3L/6L)", "Universal Tile Integration"],
     popularProducts: ["TECEbox Concealed Tank", "TECEloop Glass Flush Plate", "TECEprofil Module"],
@@ -747,6 +764,7 @@ export const BRANDS: Brand[] = [
     categoryId: "drainage-solution",
     categoryName: "Drainage Solution",
     logo: "/logos/lidco.png",
+    cataloguePdfUrl: "/pdfs/LIDCO DRAINAGE CATALOGUE.pdf",
     description: "Architectural stainless steel linear shower drains, tile-insert channels, cockroach traps, and industrial storm drains.",
     specifications: ["Grade 304 Stainless Steel", "Tile-Insert Invisible Drain Look", "Anti-Odour Water Seal Trap"],
     popularProducts: ["LIDCO Linear Tile-Insert Shower Drains", "LIDCO Multi-Flow Floor Traps", "LIDCO Balcony Channels"],

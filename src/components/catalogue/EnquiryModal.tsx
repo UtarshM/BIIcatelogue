@@ -24,8 +24,8 @@ export function EnquiryModal({
 }: {
   isOpen: boolean;
   onClose: () => void;
-  initialCategoryId?: string;
-  initialBrandId?: string;
+  initialCategoryId?: string | undefined;
+  initialBrandId?: string | undefined;
 }) {
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
@@ -247,7 +247,7 @@ export function EnquiryModal({
                   {COMPANY_DETAILS.relationshipManager.name}
                 </div>
                 <div className="text-slate-500">
-                  Direct Desk: {COMPANY_DETAILS.relationshipManager.phoneFormatted}
+                  Direct Desk: {COMPANY_DETAILS.relationshipManager.phoneInternational}
                 </div>
               </div>
             </div>

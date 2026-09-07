@@ -1,0 +1,14 @@
+node_modules
+.output
+.git
+.wrangler
+.vinxi
+.tanstack
+.nitro
+*.log
+scratch/
+scratch
+
+# Unreferenced large files and assets not used in app
+BuilditIndia-Brochure-merged.pdf
+public/extracted_brochure

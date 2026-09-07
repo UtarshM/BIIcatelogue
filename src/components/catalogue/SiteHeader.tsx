@@ -47,12 +47,6 @@ export function SiteHeader({
             48 Associate Brands
           </a>
           <a
-            href="#value-pillars"
-            className="transition-colors hover:text-primary relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all"
-          >
-            Why BuilditIndia
-          </a>
-          <a
             href="#contact"
             className="transition-colors hover:text-primary relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all"
           >
@@ -123,13 +117,6 @@ export function SiteHeader({
             >
               <span>48 Associate Brands</span>
               <span className="text-xs bg-primary/10 px-2 py-0.5 rounded-md text-primary font-bold">48</span>
-            </a>
-            <a
-              href="#value-pillars"
-              onClick={() => setMobileMenuOpen(false)}
-              className="rounded-xl px-3.5 py-2.5 text-slate-800 hover:bg-slate-50 hover:text-primary transition-colors"
-            >
-              Why Choose BuilditIndia
             </a>
             <a
               href="#contact"

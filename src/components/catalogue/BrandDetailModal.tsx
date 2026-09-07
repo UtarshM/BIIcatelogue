@@ -102,35 +102,90 @@ export function BrandDetailModal({
             </div>
           )}
 
-          {/* Dedicated Catalogue Slot (No RM Phone Number) */}
-          <div className="rounded-xl border border-dashed border-blue-300 bg-blue-50/50 p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <div className="text-center sm:text-left">
-              <h5 className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5 justify-center sm:justify-start">
-                <FileDown className="h-4 w-4 text-primary" />
-                {brand.name} Digital Catalogue
-              </h5>
-              <p className="text-xs text-slate-600 mt-0.5">
-                {brand.cataloguePdfUrl
-                  ? "Download the dedicated specification booklet for this brand."
-                  : "Individual brand specification sheet is available. You can also view the Master Brochure."}
-              </p>
+          {/* Dedicated Catalogue Slot (Open PDF + Download PDF) */}
+          <div className="rounded-xl border border-dashed border-blue-300 bg-blue-50/50 p-4 sm:p-5 space-y-3">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+              <div>
+                <h5 className="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
+                  <FileDown className="h-4 w-4 text-primary" />
+                  {brand.name} Digital Catalogue
+                </h5>
+                <p className="text-xs text-slate-600 mt-1">
+                  {brand.cataloguePdfUrl
+                    ? "View in browser or download the dedicated official specification booklet."
+                    : "Individual specification sheet is available. You can also view or download the Master Brochure."}
+                </p>
+              </div>
+
+              <div className="flex items-center gap-2 shrink-0 w-full sm:w-auto">
+                {/* 1. OPEN PDF OPTION */}
+                <Button
+                  size="sm"
+                  variant="outline"
+                  onClick={() => {
+                    if (brand.cataloguePdfUrl) {
+                      window.open(brand.cataloguePdfUrl, "_blank", "noopener,noreferrer");
+                    } else {
+                      onViewBrochure();
+                    }
+                  }}
+                  className="flex-1 sm:flex-none font-bold border-primary text-primary hover:bg-primary/10 text-xs h-9.5 px-3.5 gap-1.5 cursor-pointer"
+                  title={`Open ${brand.name} PDF in new tab`}
+                >
+                  <ExternalLink className="h-3.5 w-3.5" />
+                  <span>{brand.cataloguePdfUrl ? "Open PDF" : "Open Brochure"}</span>
+                </Button>
+
+                {/* 2. DOWNLOAD PDF OPTION */}
+                <a
+                  href={brand.cataloguePdfUrl || COMPANY_DETAILS.brochurePdfUrl}
+                  download
+                  className="flex-1 sm:flex-none inline-flex items-center justify-center font-bold bg-primary hover:bg-primary/90 text-white rounded-md text-xs h-9.5 px-3.5 gap-1.5 shadow-xs transition cursor-pointer"
+                  title={`Download ${brand.name} PDF`}
+                >
+                  <FileDown className="h-3.5 w-3.5" />
+                  <span>Download PDF</span>
+                </a>
+              </div>
             </div>
 
-            <Button
-              size="sm"
-              variant="outline"
-              onClick={() => {
-                if (brand.cataloguePdfUrl) {
-                  window.open(brand.cataloguePdfUrl, "_blank");
-                } else {
-                  onViewBrochure();
-                }
-              }}
-              className="shrink-0 font-bold border-primary text-primary hover:bg-primary/10 text-xs h-9"
-            >
-              <FileDown className="h-4 w-4 mr-1.5" />
-              {brand.cataloguePdfUrl ? "Download Brand PDF" : "View Master Brochure"}
-            </Button>
+            {/* Additional Brand Catalogues if available */}
+            {brand.additionalPdfs && brand.additionalPdfs.length > 0 && (
+              <div className="pt-3 border-t border-blue-200/60 space-y-2">
+                <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+                  Additional Technical Catalogues:
+                </div>
+                <div className="flex flex-col gap-1.5">
+                  {brand.additionalPdfs.map((pdf) => (
+                    <div
+                      key={pdf.url}
+                      className="flex items-center justify-between gap-2 bg-white rounded-lg px-3 py-2 border border-blue-200/50 text-xs"
+                    >
+                      <span className="font-semibold text-slate-700 truncate">{pdf.title}</span>
+                      <div className="flex items-center gap-2 shrink-0">
+                        <button
+                          type="button"
+                          onClick={() => window.open(pdf.url, "_blank", "noopener,noreferrer")}
+                          className="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1 cursor-pointer"
+                        >
+                          <ExternalLink className="h-3.5 w-3.5" />
+                          Open
+                        </button>
+                        <span className="text-slate-300">|</span>
+                        <a
+                          href={pdf.url}
+                          download
+                          className="text-xs font-bold text-slate-600 hover:text-slate-900 inline-flex items-center gap-1 cursor-pointer"
+                        >
+                          <FileDown className="h-3.5 w-3.5" />
+                          Download
+                        </a>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Relationship Manager Sourcing Desk */}
