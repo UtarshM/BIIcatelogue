@@ -78,7 +78,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "India's Digital platform for All Building Materials. Explore 15 product categories, 48 premier associate brands, and get direct manufacturer pricing.",
+          "India's Digital platform for All Building Materials. Explore 15 product categories, 50 premier associate brands, and get direct manufacturer pricing.",
       },
       { name: "author", content: "BuilditIndia - HECTACORN TRADETECH PVT LTD" },
 
@@ -89,7 +89,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "India's Digital platform for All Building Materials. Explore 15 categories and 48 premier associate brands with direct manufacturer pricing.",
+          "India's Digital platform for All Building Materials. Explore 15 categories and 50 premier associate brands with direct manufacturer pricing.",
       },
       { property: "og:url", content: "https://builditindia-brand-hub-main.vercel.app" },
       { property: "og:image", content: "https://builditindia-brand-hub-main.vercel.app/og-image.png" },
@@ -106,7 +106,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "twitter:description",
         content:
-          "India's Digital platform for All Building Materials. Sourced directly from 48+ associate brands.",
+          "India's Digital platform for All Building Materials. Sourced directly from 50+ associate brands.",
       },
       { name: "twitter:image", content: "https://builditindia-brand-hub-main.vercel.app/og-image.png" },
       { name: "twitter:image:alt", content: "BuilditIndia - Everything Construction. One Platform." },

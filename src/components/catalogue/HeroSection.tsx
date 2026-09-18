@@ -153,7 +153,7 @@ export function HeroSection({
           <div className="hidden lg:flex items-center gap-2">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200/80 text-primary text-xs font-bold">
               <span className="w-2 h-2 rounded-full bg-orange-400 animate-ping" />
-              15 Product Categories • 48 Associate Brands
+              15 Product Categories • 50 Associate Brands
             </span>
           </div>
 
@@ -236,7 +236,7 @@ export function HeroSection({
                 <div className="max-w-2xl">
                   <div className="inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-500/20 px-3 py-1 text-xs font-semibold text-blue-200 backdrop-blur-md mb-3">
                     <span className="w-2 h-2 rounded-full bg-orange-400 animate-ping" />
-                    <span>15 Material Categories • 48 Associate Brands</span>
+                    <span>15 Material Categories • 50 Associate Brands</span>
                   </div>
 
                   <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">

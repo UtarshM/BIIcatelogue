@@ -105,7 +105,7 @@ export function SiteFooter({
             <ul className="space-y-2">
               <li><a href="#categories" className="hover:text-white transition">Radiant Cooling (Giacomini)</a></li>
               <li><a href="#categories" className="hover:text-white transition">Wellness Spas (Acquaviva)</a></li>
-              <li><a href="#brands" className="hover:text-white transition">Browse All 48 Brands</a></li>
+              <li><a href="#brands" className="hover:text-white transition">Browse All 50 Brands</a></li>
               <li><a href="#contact" className="hover:text-white transition">Relationship Desk</a></li>
             </ul>
           </div>

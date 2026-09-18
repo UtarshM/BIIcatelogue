@@ -44,7 +44,7 @@ export function SiteHeader({
             href="#brands"
             className="transition-colors hover:text-primary relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all"
           >
-            48 Associate Brands
+            50 Associate Brands
           </a>
           <a
             href="#contact"
@@ -115,8 +115,8 @@ export function SiteHeader({
               onClick={() => setMobileMenuOpen(false)}
               className="rounded-xl px-3.5 py-2.5 text-slate-800 hover:bg-slate-50 hover:text-primary transition-colors flex items-center justify-between"
             >
-              <span>48 Associate Brands</span>
-              <span className="text-xs bg-primary/10 px-2 py-0.5 rounded-md text-primary font-bold">48</span>
+              <span>50 Associate Brands</span>
+              <span className="text-xs bg-primary/10 px-2 py-0.5 rounded-md text-primary font-bold">50</span>
             </a>
             <a
               href="#contact"

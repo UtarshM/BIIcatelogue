@@ -114,7 +114,7 @@ export function CatalogueExplorer({
               Official Material Catalogue
             </div>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Explore 15 Categories & <span className="text-primary">48 Associate Brands</span>
+              Explore 15 Categories & <span className="text-primary">{BRANDS.length} Associate Brands</span>
             </h2>
             <p className="mt-2 text-xs sm:text-base text-slate-600 max-w-2xl">
               Filter by product vertical, discover technical specifications, and download catalogues or request wholesale quotations.
@@ -160,7 +160,7 @@ export function CatalogueExplorer({
                   selectedCategory === "all" ? "bg-white/20 text-white" : "bg-slate-100 text-slate-600"
                 }`}
               >
-                48
+                {BRANDS.length}
               </span>
             </button>
 

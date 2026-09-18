@@ -126,7 +126,7 @@ export const CATEGORIES: Category[] = [
     tagline: "Luxury Ceramics, Faucets & Mixers",
     description: "European and designer sanitaryware, rimless water closets, smart faucets, thermostatic diverters, and wellness showers.",
     iconName: "Bath",
-    brandCount: 6,
+    brandCount: 7,
   },
   {
     id: "tiles",
@@ -190,7 +190,7 @@ export const CATEGORIES: Category[] = [
     tagline: "Architectural Drains & Linear Channels",
     description: "Precision engineered linear shower channels, anti-odour cockroach traps, and heavy-duty building drainage systems.",
     iconName: "Filter",
-    brandCount: 1,
+    brandCount: 2,
   },
 ];
 
@@ -521,7 +521,7 @@ export const BRANDS: Brand[] = [
     popularProducts: ["Birlanu CPVC Aqua", "Birlanu SuperFlow UPVC"],
   },
 
-  // 7. BATH FITTINGS & SANITARY WARE (6 Brands)
+  // 7. BATH FITTINGS & SANITARY WARE (7 Brands)
   {
     id: "duravit",
     name: "DURAVIT",
@@ -529,6 +529,11 @@ export const BRANDS: Brand[] = [
     categoryId: "bath-fittings",
     categoryName: "Bath Fittings & Sanitaryware",
     logo: "/logos/duravit.png",
+    cataloguePdfUrl: "/pdfs/Duravit_2026_All_Basin_Collection.pdf",
+    additionalPdfs: [
+      { title: "Duravit 2026 All Basin Collection", url: "/pdfs/Duravit_2026_All_Basin_Collection.pdf" },
+      { title: "Duravit 2026 All Wallhung Toilets Collection", url: "/pdfs/Duravit_2026_All_Wallhung_Toilets.pdf" },
+    ],
     description: "Iconic German designer ceramics, Philippe Starck collections, rimless HygieneGlaze toilets, and vanity systems.",
     specifications: ["HygieneGlaze 2.0 Anti-Bacterial", "Rimless Flushing", "Designer Architectural Series"],
     popularProducts: ["Duravit ME by Starck", "Duravit SensoWash Shower Toilet", "Duravit D-Neo"],
@@ -540,9 +545,32 @@ export const BRANDS: Brand[] = [
     categoryId: "bath-fittings",
     categoryName: "Bath Fittings & Sanitaryware",
     logo: "/logos/hansgrohe.png",
+    cataloguePdfUrl: "/pdfs/Hansgrohe_Bathroom_Sales_Manual.pdf",
+    additionalPdfs: [
+      { title: "Hansgrohe Bathroom Sales Manual Master", url: "/pdfs/Hansgrohe_Bathroom_Sales_Manual.pdf" },
+      { title: "Hansgrohe News Product Book 2025", url: "/pdfs/Hansgrohe_News_Product_Book_2025.pdf" },
+      { title: "Hansgrohe 2025 Bath & Kitchen News", url: "/pdfs/Hansgrohe_2025_Bath_and_Kitchen_News.pdf" },
+      { title: "Hansgrohe ISH Novelties 2023", url: "/pdfs/Hansgrohe_ISH_News_Novelties_2023.pdf" },
+    ],
     description: "German engineered luxury shower systems, EcoSmart water-saving aerators, and precision thermostatic bath mixers.",
     specifications: ["AirPower & PowderRain Tech", "EcoSmart 60% Water Saving", "Select Push-Button Control"],
     popularProducts: ["Raindance Shower Heads", "Talis E Faucets", "ShowerSelect Thermostats"],
+  },
+  {
+    id: "axor",
+    name: "AXOR",
+    tagline: "Form Follows Perfection",
+    categoryId: "bath-fittings",
+    categoryName: "Bath Fittings & Sanitaryware",
+    logo: "/logos/axor.png",
+    cataloguePdfUrl: "/pdfs/AXOR_Luxury_Sales_Book.pdf",
+    additionalPdfs: [
+      { title: "AXOR Luxury Sales Book Master", url: "/pdfs/AXOR_Luxury_Sales_Book.pdf" },
+      { title: "AXOR Suite Basins & Bathtubs by Philippe Starck", url: "/pdfs/AXOR_Suite_Basins_and_Bathtub_Philippe_Starck.pdf" },
+    ],
+    description: "Avant-garde luxury bathroom collections and bespoke design icons created in collaboration with Philippe Starck, Antonio Citterio, and Barber & Osgerby.",
+    specifications: ["AXOR FinishPlus Custom PVD Surfaces", "AirPower & PowderRain Innovations", "Iconic Designer Collaborations"],
+    popularProducts: ["AXOR One Collection", "AXOR Starck Organic", "AXOR Suite Basins & Bathtub", "AXOR Edge"],
   },
   {
     id: "hindware-italian",
@@ -563,6 +591,10 @@ export const BRANDS: Brand[] = [
     categoryId: "bath-fittings",
     categoryName: "Bath Fittings & Sanitaryware",
     logo: "/logos/queo.png",
+    cataloguePdfUrl: "/pdfs/Queo_Master_Catalog_Oct_2025.pdf",
+    additionalPdfs: [
+      { title: "Queo Master Catalog Oct 2025–26", url: "/pdfs/Queo_Master_Catalog_Oct_2025.pdf" },
+    ],
     description: "Bespoke European luxury bath collections designed by international masters for premium penthouses and villas.",
     specifications: ["Signature European Designers", "PVD Metallic Finishes", "Ceramic Cartridge Endurance"],
     popularProducts: ["Queo F-Courbe Collection", "Queo Smart WCs", "Queo Freestanding Tubs"],
@@ -756,7 +788,7 @@ export const BRANDS: Brand[] = [
     popularProducts: ["JK LakshmiPlast Smart Wall Putty", "JK LakshmiPlast Gypsum Plaster"],
   },
 
-  // 15. DRAINAGE SOLUTION (1 Brand)
+  // 15. DRAINAGE SOLUTION (2 Brands)
   {
     id: "lidco",
     name: "LIDCO",
@@ -768,5 +800,20 @@ export const BRANDS: Brand[] = [
     description: "Architectural stainless steel linear shower drains, tile-insert channels, cockroach traps, and industrial storm drains.",
     specifications: ["Grade 304 Stainless Steel", "Tile-Insert Invisible Drain Look", "Anti-Odour Water Seal Trap"],
     popularProducts: ["LIDCO Linear Tile-Insert Shower Drains", "LIDCO Multi-Flow Floor Traps", "LIDCO Balcony Channels"],
+  },
+  {
+    id: "filcoten",
+    name: "FILCOTEN",
+    tagline: "High-Tech Mineral Composite Drainage",
+    categoryId: "drainage-solution",
+    categoryName: "Drainage Solution",
+    logo: "/logos/filcoten.png",
+    cataloguePdfUrl: "/pdfs/FILCOTEN_Master_Catalogue.pdf",
+    additionalPdfs: [
+      { title: "FILCOTEN BG-Graspointner Master Catalogue", url: "/pdfs/FILCOTEN_Master_Catalogue.pdf" },
+    ],
+    description: "Austrian engineered HPC (High-Performance Concrete) drainage channels combining extreme structural strength with 70% lighter weight and 100% recyclability.",
+    specifications: ["HPC High-Performance Concrete", "Load Classes A15 to F900", "Fire Class A1 Non-Combustible", "100% Recyclable"],
+    popularProducts: ["FILCOTEN Pro Drainage Channels", "FILCOTEN Light Series", "FILCOTEN Slot Top Architectural Inset"],
   },
 ];
