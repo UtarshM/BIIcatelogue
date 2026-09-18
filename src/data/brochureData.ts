@@ -19,6 +19,7 @@ export interface Category {
   description: string;
   iconName: string;
   brandCount: number;
+  image: string;
 }
 
 export interface ValuePillar {
@@ -79,6 +80,7 @@ export const CATEGORIES: Category[] = [
     description: "High-tensile, earthquake-resistant thermo-mechanically treated steel bars for foundations, beams, and columns.",
     iconName: "ShieldAlert",
     brandCount: 8,
+    image: "/categories/tmt-bars.jpg",
   },
   {
     id: "aac-blocks",
@@ -87,6 +89,7 @@ export const CATEGORIES: Category[] = [
     description: "High thermal insulation, lightweight, fire-resistant masonry blocks for fast and energy-efficient building construction.",
     iconName: "Boxes",
     brandCount: 4,
+    image: "/categories/aac-blocks.jpg",
   },
   {
     id: "cement",
@@ -95,6 +98,7 @@ export const CATEGORIES: Category[] = [
     description: "Grade 53/43 OPC and durable PPC cement engineered for extreme compressive strength and long-lasting concrete structures.",
     iconName: "Factory",
     brandCount: 4,
+    image: "/categories/cement.jpg",
   },
   {
     id: "aac-wall-panel",
@@ -103,6 +107,7 @@ export const CATEGORIES: Category[] = [
     description: "Reinforced prefabricated lightweight concrete panels for rapid internal and external dry-wall installations.",
     iconName: "Layers",
     brandCount: 1,
+    image: "/categories/aac-wall-panel.jpg",
   },
   {
     id: "adhesive-waterproofing",
@@ -111,6 +116,7 @@ export const CATEGORIES: Category[] = [
     description: "Advanced polymer tile adhesives, epoxy grouts, structural waterproofing membranes, and concrete protection chemicals.",
     iconName: "Droplets",
     brandCount: 5,
+    image: "/categories/adhesive-waterproofing.jpg",
   },
   {
     id: "plumbing",
@@ -119,6 +125,7 @@ export const CATEGORIES: Category[] = [
     description: "High-flow, corrosion-free hot and cold water distribution systems, industrial drainage, and acoustic piping solutions.",
     iconName: "Pipette",
     brandCount: 6,
+    image: "/categories/plumbing.jpg",
   },
   {
     id: "bath-fittings",
@@ -127,6 +134,7 @@ export const CATEGORIES: Category[] = [
     description: "European and designer sanitaryware, rimless water closets, smart faucets, thermostatic diverters, and wellness showers.",
     iconName: "Bath",
     brandCount: 7,
+    image: "/categories/bath-fittings.jpg",
   },
   {
     id: "tiles",
@@ -135,6 +143,7 @@ export const CATEGORIES: Category[] = [
     description: "Ultra-large porcelain slabs, glazed vitrified tiles, anti-skid floor tiles, and polished wall ceramics for modern interiors.",
     iconName: "Grid",
     brandCount: 3,
+    image: "/categories/tiles.jpg",
   },
   {
     id: "flush-tank",
@@ -143,6 +152,7 @@ export const CATEGORIES: Category[] = [
     description: "Pneumatic and dual-flush concealed cistern systems with water-saving precision mechanisms.",
     iconName: "Sparkles",
     brandCount: 3,
+    image: "/categories/flush-tank.jpg",
   },
   {
     id: "kitchen-sink",
@@ -151,6 +161,7 @@ export const CATEGORIES: Category[] = [
     description: "Heavy-gauge handmade stainless steel and granite composite sink ensembles with anti-bacterial surfaces.",
     iconName: "ChefHat",
     brandCount: 2,
+    image: "/categories/kitchen-sink.jpg",
   },
   {
     id: "radiant-cooling",
@@ -159,6 +170,7 @@ export const CATEGORIES: Category[] = [
     description: "Energy-efficient hydronic radiant cooling and heating systems providing uniform indoor thermal comfort.",
     iconName: "ThermometerSnowflake",
     brandCount: 1,
+    image: "/categories/radiant-cooling.jpg",
   },
   {
     id: "wellness-products",
@@ -167,6 +179,7 @@ export const CATEGORIES: Category[] = [
     description: "Luxury hydrotherapy wellness systems, whirlpool bathtubs, steam generators, and sensory shower enclosures.",
     iconName: "HeartPulse",
     brandCount: 1,
+    image: "/categories/wellness-products.jpg",
   },
   {
     id: "paints",
@@ -175,6 +188,7 @@ export const CATEGORIES: Category[] = [
     description: "High-sheen luxury emulsions, weather-proof exterior coatings, primers, and stain-resistant finishes.",
     iconName: "Paintbrush",
     brandCount: 1,
+    image: "/categories/paints.jpg",
   },
   {
     id: "wall-putti",
@@ -183,6 +197,7 @@ export const CATEGORIES: Category[] = [
     description: "Water-resistant, ultra-white base coat putty providing an immaculate smooth surface for premium paint adhesion.",
     iconName: "SquareDot",
     brandCount: 2,
+    image: "/categories/wall-putti.jpg",
   },
   {
     id: "drainage-solution",
@@ -191,6 +206,7 @@ export const CATEGORIES: Category[] = [
     description: "Precision engineered linear shower channels, anti-odour cockroach traps, and heavy-duty building drainage systems.",
     iconName: "Filter",
     brandCount: 2,
+    image: "/categories/drainage-solution.jpg",
   },
 ];
 
@@ -579,7 +595,7 @@ export const BRANDS: Brand[] = [
     categoryId: "bath-fittings",
     categoryName: "Bath Fittings & Sanitaryware",
     logo: "/logos/hindware-italian.png",
-    cataloguePdfUrl: "/pdfs/Cat Bath Complete Searchable-compressed (1).pdf",
+    cataloguePdfUrl: "/pdfs/Hindware_Italian_Complete_Catalogue.pdf",
     description: "Modern Italian aesthetics combined with powerful dual-tornado flush sanitaryware and designer bath fittings.",
     specifications: ["Nano-Glaze Antibacterial Finish", "Tornado Dual Flush", "Ultra-Sleek Profiles"],
     popularProducts: ["Hindware Element Water Closet", "Hindware Alita Brassware", "Hindware Touchless Taps"],

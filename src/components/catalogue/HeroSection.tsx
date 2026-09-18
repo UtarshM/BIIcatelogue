@@ -354,27 +354,38 @@ export function HeroSection({
                       setActiveCategoryId(cat.id);
                       setBrandSearchQuery("");
                     }}
-                    className="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-xs hover:shadow-xl hover:border-primary/50 hover:-translate-y-1 transition-all duration-200 text-left flex flex-col justify-between active:scale-97 cursor-pointer group relative overflow-hidden min-h-[145px] sm:min-h-[175px]"
+                    className="bg-white rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-xl hover:border-primary/50 hover:-translate-y-1 transition-all duration-200 text-left flex flex-col justify-between active:scale-97 cursor-pointer group relative overflow-hidden"
                   >
                     <div>
-                      {/* Card Icon */}
-                      <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-xl sm:rounded-2xl bg-blue-50 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors shadow-2xs mb-3">
-                        {getCategoryIcon(cat.id, "h-5 w-5 sm:h-6 sm:w-6")}
+                      {/* Real Material Category Image */}
+                      <div className="relative h-28 sm:h-36 w-full overflow-hidden bg-slate-100 border-b border-slate-100">
+                        <img
+                          src={cat.image}
+                          alt={cat.name}
+                          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-108"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <div className="absolute top-2 right-2 h-7 w-7 rounded-lg bg-white/90 backdrop-blur-xs text-primary flex items-center justify-center shadow-xs">
+                          {getCategoryIcon(cat.id, "h-3.5 w-3.5")}
+                        </div>
                       </div>
 
-                      {/* Category Title */}
-                      <h3 className="font-extrabold text-sm sm:text-base text-slate-900 group-hover:text-primary transition-colors leading-snug">
-                        {cat.name}
-                      </h3>
+                      <div className="p-3.5 sm:p-4">
+                        {/* Category Title */}
+                        <h3 className="font-extrabold text-sm sm:text-base text-slate-900 group-hover:text-primary transition-colors leading-snug">
+                          {cat.name}
+                        </h3>
 
-                      {/* Subtitle / Material Description */}
-                      <p className="text-[11px] sm:text-xs text-slate-500 line-clamp-2 mt-1 sm:mt-1.5 font-medium leading-relaxed">
-                        {cat.tagline}
-                      </p>
+                        {/* Subtitle / Material Description */}
+                        <p className="text-[11px] sm:text-xs text-slate-500 line-clamp-2 mt-1 sm:mt-1.5 font-medium leading-relaxed">
+                          {cat.tagline}
+                        </p>
+                      </div>
                     </div>
 
                     {/* Card Footer Action */}
-                    <div className="mt-3.5 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-primary">
+                    <div className="px-3.5 sm:px-4 pb-3.5 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-primary">
                       <span>View Brands</span>
                       <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
                     </div>
