@@ -132,14 +132,29 @@ export function HeroSection({
       {/* 1. APP TOP NAVIGATION (Responsive: Mobile Bar + Desktop Header) */}
       <header className="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-15 sm:h-18 flex items-center justify-between gap-3">
-          {/* Logo */}
-          <div className="flex items-center gap-3">
+          {/* Logo & Back button when inside category */}
+          <div className="flex items-center gap-2 sm:gap-3">
+            {activeCategoryId ? (
+              <button
+                type="button"
+                onClick={() => {
+                  setActiveCategoryId(null);
+                  setBrandSearchQuery("");
+                }}
+                className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl bg-primary/10 hover:bg-primary/20 text-primary font-bold text-xs sm:text-sm transition-all active:scale-95 cursor-pointer shrink-0"
+                title="Back to All Categories"
+              >
+                <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="font-extrabold">Back</span>
+              </button>
+            ) : null}
+
             <img
               src="/builditindia-logo.png"
               alt="BuilditIndia - Everything Construction. One Platform."
               className="h-8 sm:h-10 w-auto object-contain"
             />
-            <div className="border-l border-slate-200 pl-2.5">
+            <div className="border-l border-slate-200 pl-2 sm:pl-2.5">
               <div className="text-xs sm:text-sm font-extrabold text-slate-900 leading-tight">
                 Material Hub
               </div>
@@ -583,6 +598,21 @@ export function HeroSection({
 
       {/* 3. MOBILE FLOATING QUICK ACTION BAR (Mobile view only: sm:hidden) */}
       <div className="sm:hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2 flex items-center gap-2 shadow-2xl z-30">
+        {activeCategoryId && (
+          <button
+            type="button"
+            onClick={() => {
+              setActiveCategoryId(null);
+              setBrandSearchQuery("");
+            }}
+            className="flex items-center justify-center gap-1 h-11 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs border border-slate-300 transition-all active:scale-95 cursor-pointer shrink-0"
+            title="Back to All Categories"
+          >
+            <ChevronLeft className="h-4 w-4" />
+            <span>Back</span>
+          </button>
+        )}
+
         <a
           href={directWhatsappUrl}
           target="_blank"
@@ -605,7 +635,7 @@ export function HeroSection({
         <button
           type="button"
           onClick={onViewBrochure}
-          className="flex items-center justify-center h-11 w-11 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 transition-all active:scale-95 cursor-pointer"
+          className="flex items-center justify-center h-11 w-11 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 transition-all active:scale-95 cursor-pointer shrink-0"
           title="Download Brochure PDF"
         >
           <BookOpen className="h-4 w-4 text-primary" />
