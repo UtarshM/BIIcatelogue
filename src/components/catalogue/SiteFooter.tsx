@@ -93,7 +93,7 @@ export function SiteFooter({
               <li><a href="#categories" className="hover:text-white transition">Bath Fittings & Sanitaryware</a></li>
               <li><a href="#categories" className="hover:text-white transition">Tiles & Porcelain Slabs</a></li>
               <li><a href="#categories" className="hover:text-white transition">Kitchen Sinks</a></li>
-              <li><a href="#categories" className="hover:text-white transition">Paints & Wall Putti</a></li>
+              <li><a href="#categories" className="hover:text-white transition">Paints & Wall Putty</a></li>
             </ul>
           </div>
 
